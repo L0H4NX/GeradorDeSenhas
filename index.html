@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <title>Gerador de Senha</title>
+</head>
+<body>
+    <div class="container">
+        <img src="/assets/secure-password-logo.png" alt="Cadeado Logo">
+        <div class="container-input">
+
+            <h1 class="titulo">Gere uma senha de segurança</h1>
+
+            <span class="tamanho-senha">Tamanho: <span id="valor"></span> caracteres</span>
+
+            <input class="slider" type="range" name="slider" id="slider" min="5" max="25">
+
+            <button onclick="gerar()" id="botao-gerar" class="botao-gerar">Gerar Senha</button>
+        </div>
+
+        <div onclick="copy()" id="container-senhaGerada" class="container-senhaGerada" >
+            <span class="texto-senhaGerada">Sua senha gerada foi: </span>
+            <div class="container-password">
+                <span class="password" id="password"></span>
+            </div>
+            <span id="texto-copiadog" class="texto-senhaGerada">Clique para copiar sua senha</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

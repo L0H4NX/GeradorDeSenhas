@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap');
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+    
+    
+}
+body{
+    background-color: black;
+    font-family: 'IM Fell English SC', sans-serif;
+    color: #fff;
+}
+
+.container{
+     height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.container-input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.container-senhaGerada{
+    
+    opacity: 0;
+}
+.active{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    gap: 15px;
+    transition: opacity linear 0.8s;
+    padding: 10px 20px;
+}
+.tamanho-senha{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.slider{
+    -webkit-appearance: none;
+    background: #ff0000;
+    outline: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 9px;  
+}
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: #5a5858;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.botao-gerar{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0); 
+    border: 3px solid red;
+    padding: 10px;
+    color: #fff;
+    width: 80%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    letter-spacing: 2px;
+    transition: linear 0.5s;
+}
+.botao-gerar:hover{
+    background-color: rgb(255, 0, 0);
+    width: 78%;
+   
+}
+
+.texto-senhaGerada{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.password{
+    background-color: red;
+    font-size: 22px;
+    padding: 10px;
+    width: 80px;
+    font-family: Arial, Helvetica, sans-serif;
+}
